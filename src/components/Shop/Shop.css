@@ -1,0 +1,491 @@
+.shop-page {
+  background-color: #eafcf0;
+  min-height: 100vh;
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #02362c;
+  padding-bottom: 4rem;
+}
+
+/* HERO SECTION */
+.shop-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.shop-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shop-badge {
+  font-family: 'Special Elite', monospace;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1px solid #02362c;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #02362c;
+}
+
+.shop-title {
+  font-family: 'Oi', system-ui;
+  font-size: 5rem;
+  color: #02362c;
+  margin-bottom: 1.5rem;
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.shop-subtitle {
+  font-family: 'Special Elite', monospace;
+  font-size: 1rem;
+  color: #1f4d42;
+  max-width: 500px;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.shop-hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-solid {
+  background: #02362c;
+  color: #eafcf0;
+  border: 2px solid #02362c;
+  padding: 0.8rem 1.8rem;
+  border-radius: 100px;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-solid:hover {
+  background: #1f4d42;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #02362c;
+  border: 1px solid #02362c;
+  padding: 0.8rem 1.8rem;
+  border-radius: 100px;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #02362c;
+  color: #eafcf0;
+}
+
+.shop-hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image-card {
+  background: #e8ded1;
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0, 54, 44, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-paddle {
+  width: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2));
+}
+
+/* FILTERS */
+.shop-filters-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(2, 54, 44, 0.1);
+}
+
+.shop-filters {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.shop-filter-btn {
+  background: #02362c;
+  border: 2px solid #02362c;
+  border-radius: 100px;
+  padding: 0.6rem 1.5rem;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.shop-filter-btn:hover {
+  background: #1f4d42;
+  color: #fff;
+  border-color: #1f4d42;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(2, 54, 44, 0.2);
+}
+
+.shop-filter-btn.active {
+  background: #d7ff53;
+  color: #02362c;
+  border-color: #d7ff53;
+  box-shadow: 0 4px 15px rgba(215, 255, 83, 0.4);
+}
+
+.shop-sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort-select {
+  background: #eafcf0;
+  border: 1px solid #02362c;
+  border-radius: 100px;
+  padding: 0.6rem 1.5rem;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #02362c;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+/* PRODUCTS GRID */
+.shop-products {
+  margin-bottom: 10rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.product-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid rgba(2, 54, 44, 0.1);
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  padding: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-side-title {
+  position: absolute;
+  left: -30%;
+  top: 0;
+  width: 4rem;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  background-color: #02362c;
+  color: #fff;
+  font-family: 'Special Elite', monospace;
+  font-weight: bold;
+  transition: 0.5s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.product-card:hover {
+  box-shadow: 0 15px 40px rgba(2, 54, 44, 0.12);
+}
+
+.product-card:hover .product-side-title {
+  left: 0;
+}
+
+.product-card:hover .product-image-wrap {
+  transform: rotate(15deg);
+  margin-left: 3.5rem;
+}
+
+.product-card:hover .product-info {
+  margin-left: 3.5rem;
+}
+
+.product-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #f4f4f4;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.heart-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff4b4b;
+}
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #d7ff53;
+  color: #02362c;
+  padding: 0.3rem 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.65rem;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  transition: 0.5s ease;
+}
+
+.product-name {
+  font-family: 'Special Elite', monospace;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #222;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.product-desc {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.85rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 800;
+}
+
+.buy-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 100px;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #444;
+}
+
+/* CUSTOM ORDER CARD */
+.custom-order-card {
+  background: #02362c;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.custom-order-card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.custom-order-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-icon {
+  font-family: 'Oi', system-ui;
+  font-size: 3rem;
+  color: #eafcf0;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+.custom-title {
+  font-family: 'Oi', system-ui;
+  font-size: 1.6rem;
+  color: #eafcf0;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.custom-text {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.8rem;
+  color: #a1d0c2;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #eafcf0;
+  border: 1px solid #eafcf0;
+  padding: 0.6rem 1.5rem;
+  border-radius: 100px;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: #eafcf0;
+  color: #02362c;
+}
+
+/* MEMBERSHIP BANNER MARQUEE */
+.shop-marquee {
+  width: 100%;
+  margin-top: 10rem;
+  background: #02362c;
+  color: #d7ff53;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrollText 25s linear infinite;
+  gap: 3rem;
+}
+
+.marquee-content span {
+  font-family: 'Oi', system-ui;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width: 900px) {
+  .shop-hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .shop-title {
+    font-size: 3.5rem;
+  }
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .shop-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .marquee-content span {
+    font-size: 1.2rem;
+  }
+}

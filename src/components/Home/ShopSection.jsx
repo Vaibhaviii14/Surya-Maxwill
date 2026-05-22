@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function ShopSection() {
 
   return (
@@ -34,28 +36,6 @@ function ShopSection() {
 
           </div>
 
-          {/* FILTER BUTTONS */}
-
-          {/* <div className="shop-filters">
-
-            <button className="filter-btn active">
-              ALL
-            </button>
-
-            <button className="filter-btn">
-              PADDLES
-            </button>
-
-            <button className="filter-btn">
-              APPAREL
-            </button>
-
-            <button className="filter-btn">
-              ACCESSORIES
-            </button>
-
-          </div> */}
-
         </div>
 
         {/* RIGHT */}
@@ -78,9 +58,9 @@ function ShopSection() {
             athletes who care about every detail.
           </p>
 
-          <button className="shop-btn">
+          <Link to="/shop" className="shop-btn" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
             Explore Store
-          </button>
+          </Link>
 
         </div>
 
