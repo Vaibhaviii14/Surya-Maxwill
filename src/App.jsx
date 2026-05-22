@@ -10,15 +10,18 @@ import Testimonials from "./components/Home/Testimonials";
 import MembershipCTA from "./components/Home/MembershipCTA";
 import Footer from "./components/Footer/Footer"
 import Shop from "./components/Shop/Shop";
-
+import UserDashboard from "./pages/UserDashboard";
+import OwnerDashboard from "./pages/OwnerDashboard";
+import ExplorePage from "./pages/ExplorePage";
+import "./styles/dashboard.css";
 const HomePage = () => (
   <>
     <Navbar />
     <Hero />
     <Philosophy />
     <Experience />
-    <Courts />   
-    <ShopSection /> 
+    <Courts />
+    <ShopSection />
     <CoachesIntro />
     <Testimonials />
     <MembershipCTA />
@@ -26,12 +29,16 @@ const HomePage = () => (
   </>
 );
 
+
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/explore" element={<ExplorePage />} />
+        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/dashboard/owner" element={<OwnerDashboard />} />
       </Routes>
     </Router>
   );

@@ -110,109 +110,110 @@ tl.fromTo(
 }, []);
 
   return (
+    <div className="hero-section-outer">
+      <section className="hero-wrapper">
 
-    <section className="hero-wrapper">
+        
 
-      
+        {/* BALL */}
+        <img
+          ref={ballRef}
+          src={ball}
+          alt=""
+          className="rolling-ball"
+        />
 
-      {/* BALL */}
-      <img
-        ref={ballRef}
-        src={ball}
-        alt=""
-        className="rolling-ball"
-      />
+        {/* HERO */}
+        <div className="hero container">
 
-      {/* HERO */}
-      <div className="hero container">
-
-        {/* LEFT */}
-        <div className="hero-image-wrap">
-          <img
-            src={paddles}
-            alt=""
-            className="paddles-img"
-          />
-        </div>
-
-        {/* RIGHT */}
-        <div className="hero-content">
-
-          <div className="tag">
-            INDIA'S PREMIUM PICKLEBALL CLUB
+          {/* LEFT */}
+          <div className="hero-image-wrap">
+            <img
+              src={paddles}
+              alt=""
+              className="paddles-img"
+            />
           </div>
 
-          <h1>
-            Play.
-            <br />
-            Train.
-            <br />
-            Dominate.
-          </h1>
+          {/* RIGHT */}
+          <div className="hero-content">
 
-          <p>
-            Elevate your game with luxury courts,
-            elite coaching and cinematic experiences.
-          </p>
+            <div className="tag">
+              INDIA'S PREMIUM PICKLEBALL CLUB
+            </div>
 
-        </div>
-      </div>
+            <h1>
+              Play.
+              <br />
+              Train.
+              <br />
+              Dominate.
+            </h1>
 
-      {/* NEXT SECTION */}
-      <div className="next-section">
-
-        <div className="container next-grid">
-
-          {/* LEFT CONTENT */}
-          <div className="next-section-content">
-
-            <div className="mini-tag">
-  PREMIUM EXPERIENCE
-</div>
-
-<h2>
-  Precision in Motion
-</h2>
-
-<p>
-  Experience immersive coaching,
-  luxury courts and next-level
-  play built for modern athletes.
-</p>
-
-<div className="stats-row">
-
-  <div className="stat-item">
-    <h3>12</h3>
-    <span>Pro Courts</span>
-  </div>
-
-  <div className="stat-item">
-    <h3>300+</h3>
-    <span>Members</span>
-  </div>
-
-  <div className="stat-item">
-    <h3>15</h3>
-    <span>Certified Coaches</span>
-  </div>
-
-  <div className="stat-item">
-    <h3>6</h3>
-    <span>Years Strong</span>
-  </div>
-
-</div>
+            <p>
+              Elevate your game with luxury courts,
+              elite coaching and cinematic experiences.
+            </p>
 
           </div>
-
-          {/* RIGHT EMPTY SPACE FOR BALL */}
-          <div className="ball-space"></div>
-
         </div>
-      </div>
 
-    </section>
+        {/* NEXT SECTION */}
+        <div className="next-section">
+
+          <div className="container next-grid">
+
+            {/* LEFT CONTENT */}
+            <div className="next-section-content">
+
+              <div className="mini-tag">
+    PREMIUM EXPERIENCE
+  </div>
+
+  <h2>
+    Precision in Motion
+  </h2>
+
+  <p>
+    Experience immersive coaching,
+    luxury courts and next-level
+    play built for modern athletes.
+  </p>
+
+  <div className="stats-row">
+
+    <div className="stat-item">
+      <h3>12</h3>
+      <span>Pro Courts</span>
+    </div>
+
+    <div className="stat-item">
+      <h3>300+</h3>
+      <span>Members</span>
+    </div>
+
+    <div className="stat-item">
+      <h3>15</h3>
+      <span>Certified Coaches</span>
+    </div>
+
+    <div className="stat-item">
+      <h3>6</h3>
+      <span>Years Strong</span>
+    </div>
+
+  </div>
+
+            </div>
+
+            {/* RIGHT EMPTY SPACE FOR BALL */}
+            <div className="ball-space"></div>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
   );
 }
 
