@@ -18,6 +18,7 @@ function Navbar() {
         {/* LINKS */}
         <div className="nav-links">
           <Link to="/">Home</Link>
+          <Link to="/arena">Gallery & Coaches</Link>
           <Link to="/shop">Store</Link>
 
           <div className="dropdown">
