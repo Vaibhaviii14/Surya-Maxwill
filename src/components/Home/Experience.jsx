@@ -1,9 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+
 function Experience() {
+  const navigate = useNavigate();
 
   return (
-
     <section className="experience-section">
-
       <div className="experience-container">
 
         {/* LEFT GRID */}
@@ -59,7 +60,7 @@ function Experience() {
             because it should.
           </p>
 
-          <button>
+          <button onClick={() => navigate('/arena')}>
             Enter The Gallery
           </button>
 

@@ -15,6 +15,7 @@ function Navbar() {
         {/* LINKS */}
         <div className="nav-links">
           <Link to="/">Home</Link>
+          <Link to="/arena">Arena</Link>
           <a href="/#courts">Courts</a>
           <a href="/#coaching">Coaching</a>
           <a href="/#cafe">Cafe</a>

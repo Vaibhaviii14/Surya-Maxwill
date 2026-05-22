@@ -10,6 +10,7 @@ import Testimonials from "./components/Home/Testimonials";
 import MembershipCTA from "./components/Home/MembershipCTA";
 import Footer from "./components/Footer/Footer"
 import Shop from "./components/Shop/Shop";
+import Arena from "./components/Arena/Arena";
 
 const HomePage = () => (
   <>
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/arena" element={<Arena />} />
       </Routes>
     </Router>
   );
