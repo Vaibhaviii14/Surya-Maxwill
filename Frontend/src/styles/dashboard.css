@@ -1,0 +1,417 @@
+/* Dashboard Theme using existing visual identity */
+.dashboard-wrapper {
+  background-color: #2f5d50; /* from the dark hero state */
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  color: #f4efe7;
+  font-family: 'Special Elite', cursive;
+}
+
+/* Dashboard Nav matching the home nav but adapting for dashboard */
+.dash-nav-container {
+  padding: 1.4rem 5rem;
+}
+
+@media(max-width:900px){
+  .dash-nav-container{
+    padding: 1.4rem 2rem;
+  }
+}
+
+.dash-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.4rem;
+  border-radius: 100px;
+  background: #f4efe7; /* light cream */
+  border: 2.5px solid #1f4d42;
+}
+
+.dash-logo {
+  font-family: 'Special Elite', system-ui;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1f4d42;
+}
+
+.dash-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.dash-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-family: 'Special Elite', system-ui;
+  color: #1f4d42;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dash-links a:hover, .dash-links a.active {
+  opacity: 1;
+}
+
+.dash-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1px;
+  background: #1f4d42;
+  transition: 0.3s ease;
+}
+
+.dash-links a:hover::after, .dash-links a.active::after {
+  width: 100%;
+}
+
+.dash-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Special Elite', system-ui;
+  color: #1f4d42;
+  font-weight: 600;
+}
+
+.dash-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1f4d42;
+  color: #f4efe7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Dashboard Content */
+.dash-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+}
+
+@media(max-width:900px){
+  .dash-content {
+    padding: 2rem;
+  }
+}
+
+.dash-header {
+  margin-bottom: 3rem;
+}
+
+.dash-title {
+  font-family: 'Oi', system-ui;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: #f4efe7;
+  margin-bottom: 0.5rem;
+}
+
+.dash-subtitle {
+  font-family: 'Special Elite', system-ui;
+  font-size: 1.2rem;
+  color: rgba(244, 239, 231, 0.8);
+  letter-spacing: 1px;
+}
+
+/* Reusable Dashboard Card */
+.dash-card {
+  background: #1f4d42;
+  border: 1.5px solid rgba(4, 60, 47, 0.5);
+  border-radius: 32px;
+  padding: 2rem;
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dash-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(215, 255, 83, 0.3);
+}
+
+.dash-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.dash-card-title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2.2rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #f4efe7;
+  font-weight: 400;
+}
+
+.dash-card-badge {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  border: 1px solid #d7ff53;
+  color: #d7ff53;
+}
+
+.dash-card-badge.completed {
+  border-color: rgba(244, 239, 231, 0.5);
+  color: rgba(244, 239, 231, 0.8);
+}
+
+.dash-card-content {
+  font-family: 'Special Elite', cursive;
+  color: rgba(244, 239, 231, 0.9);
+}
+
+.dash-card-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+/* History Table / List */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr auto;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(31, 77, 66, 0.5);
+  border-radius: 16px;
+  border: 1px solid rgba(244, 239, 231, 0.1);
+  transition: 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+  color: #f4efe7;
+}
+
+.history-item:hover {
+  background: rgba(31, 77, 66, 0.8);
+  border-color: rgba(215, 255, 83, 0.3);
+}
+
+.history-date {
+  font-family: 'Special Elite', cursive;
+  color: #d7ff53;
+}
+
+.history-court {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Modal Overlay using Glassmorphism */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 55, 47, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-content {
+  background: #f4efe7; /* Cream modal for contrast */
+  border-radius: 32px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  color: #1f4d42;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #1f4d42;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal-close:hover {
+  transform: rotate(90deg);
+}
+
+.modal-title {
+  font-family: 'Oi', system-ui;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #1f4d42;
+  margin-bottom: 2rem;
+}
+
+.modal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.modal-info-item h4 {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #53776d;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.modal-info-item p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.modal-btn {
+  width: 100%;
+  border: none;
+  background: #1f4d42;
+  color: #f4efe7;
+  padding: 1.2rem;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  font-family: 'Special Elite', system-ui;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.modal-btn:hover {
+  background: #16372f;
+  transform: translateY(-2px);
+}
+
+.section-title {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d7ff53;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #d7ff53;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f4efe7;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  border-radius: 16px;
+  border: 2px solid #1f4d42;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Transparent hover bridge to prevent dropdown from disappearing */
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: transparent;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #1f4d42 !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block !important;
+  font-family: 'Special Elite', cursive !important;
+  font-size: 0.95rem !important;
+  transition: 0.25s ease;
+  border-bottom: 1px solid rgba(31, 77, 66, 0.1);
+  opacity: 0.8 !important;
+  text-align: center;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(31, 77, 66, 0.1);
+  opacity: 1 !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Arrow micro-animation */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
