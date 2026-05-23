@@ -100,7 +100,7 @@ function Shop() {
           </div>
           <div className="shop-hero-right">
             <div className="hero-custom-images">
-              <img src={paddlesImg} alt="Maxwell Pro Paddle" className="shop-hero-paddle" />
+              <img src={paddlesImg} alt="Maxwell Pro Paddle" className="hero-paddle" />
             </div>
           </div>
         </section>

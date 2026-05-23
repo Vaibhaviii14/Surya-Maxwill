@@ -503,6 +503,15 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  .shop-hero-right {
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-custom-images {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+  }
   .shop-title {
     font-size: 3.5rem;
   }
@@ -547,6 +556,10 @@
   .btn-solid, .btn-outline {
     width: 100%;
     text-align: center;
+  }
+  .hero-custom-images {
+    max-width: 280px;
+    padding: 1.5rem;
   }
   .products-grid {
     gap: 1.5rem;
