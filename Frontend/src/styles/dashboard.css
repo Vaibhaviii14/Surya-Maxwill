@@ -339,10 +339,20 @@
   background: #d7ff53;
 }
 
+/* White background override for section title contrast */
+.bg-white .section-title {
+  color: #1f4d42;
+}
+
+.bg-white .section-title::before {
+  background: #1f4d42;
+}
+
 .upcoming-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Dropdown Container */
@@ -440,6 +450,9 @@
   .dash-subtitle {
     font-size: 1.05rem;
   }
+  .upcoming-grid {
+    margin-bottom: 4rem;
+  }
 }
 
 @media(max-width: 768px) {
@@ -475,6 +488,9 @@
   }
   .dash-subtitle {
     font-size: 0.95rem;
+  }
+  .upcoming-grid {
+    margin-bottom: 3rem;
   }
   .modal-content {
     padding: 1.8rem;

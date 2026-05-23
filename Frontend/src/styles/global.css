@@ -513,14 +513,23 @@ body{
   }
 
   .hero-content h1,
-  .next-section-content h2,
   .dummy-section h2{
     font-size:4rem;
   }
 
-  .hero-content p,
+  .next-section-content h2{
+    font-size:3.5rem;
+  }
+
+  .hero-content p{
+    width:100%;
+  }
+
   .next-section-content p{
     width:100%;
+    font-size:1.2rem;
+    line-height:1.7;
+    margin-bottom:2rem;
   }
 
   .next-grid{
@@ -1051,16 +1060,27 @@ body{
   }
 
   .experience-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:180px 120px 120px;
+    gap:0.8rem;
   }
 
-  .large,
-  .wide{
-    grid-column:auto;
+  .large {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .small {
+    height: 120px;
+  }
+
+  .wide {
+    grid-column: 1 / 3;
+    height: 120px;
   }
 
   .experience-content h2{
-    font-size:3rem;
+    font-size:2.8rem;
   }
 }
 
@@ -2510,3 +2530,101 @@ font-family:'Special Elite', system-ui;
     top: 6rem;
   }
 }
+
+/* ========================================================================= */
+/* UNIVERSAL HOME PAGE RESPONSIVENESS OVERRIDES                              */
+/* ========================================================================= */
+
+@media(max-width: 768px) {
+  .next-section-content h2 {
+    font-size: 2.8rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .philosophy-left h2 {
+    font-size: 2.8rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .experience-content p {
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .experience-content button {
+    padding: 1rem 1.8rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media(max-width: 480px) {
+  /* Hero Main Title */
+  .hero-content h1 {
+    font-size: 2.6rem !important;
+  }
+  .hero-content p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Precision in Motion Section */
+  .next-section-content h2 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+  .next-section-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .stats-row {
+    gap: 1.2rem !important;
+  }
+  .stat-item {
+    padding-left: 0.8rem !important;
+  }
+  .stat-item::before {
+    height: 36px !important;
+    top: 6px !important;
+  }
+  .stat-item h3 {
+    font-size: 1.8rem !important;
+  }
+  .stat-item span {
+    font-size: 0.72rem !important;
+  }
+
+  /* Philosophy "A Curated Kind of Intensity" */
+  .philosophy-left h2 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Experience "Cinematic By Design" Section */
+  .experience-grid {
+    grid-template-rows: 140px 90px 90px !important;
+    gap: 0.6rem !important;
+  }
+  .experience-grid .small {
+    height: 90px !important;
+  }
+  .experience-grid .wide {
+    height: 90px !important;
+  }
+  .grid-img {
+    border-radius: 16px !important;
+  }
+  .experience-content h2 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+  .experience-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
