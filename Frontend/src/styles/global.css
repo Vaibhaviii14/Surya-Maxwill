@@ -2005,6 +2005,8 @@ font-family:'Special Elite', system-ui;
 
   .deck-area{
     flex-direction:column;
+    margin-left:0;
+    gap:2rem;
   }
 
   .testimonials-top h2{
@@ -2012,7 +2014,14 @@ font-family:'Special Elite', system-ui;
   }
 
   .deck-wrapper{
-    height:500px;
+    height:460px;
+  }
+
+  .next-button{
+    margin-top:1.5rem;
+    width:64px;
+    height:64px;
+    font-size:1.5rem;
   }
 }
 
@@ -2556,6 +2565,30 @@ font-family:'Special Elite', system-ui;
     padding: 1rem 1.8rem !important;
     font-size: 0.95rem !important;
   }
+
+  /* Testimonials Responsive Optimization */
+  .testimonials-section {
+    padding: 6rem 0 !important;
+  }
+  .testimonials-top h2 {
+    font-size: 2.8rem !important;
+    letter-spacing: 1px !important;
+  }
+  .deck-wrapper {
+    height: 380px !important;
+    width: calc(100% - 40px) !important;
+    margin: 0 auto !important;
+  }
+  .testimonial-card {
+    min-height: 340px !important;
+    padding: 2rem !important;
+    border-radius: 24px !important;
+  }
+  .testimonial-card p {
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+    margin: 2rem 0 !important;
+  }
 }
 
 @media(max-width: 480px) {
@@ -2626,5 +2659,41 @@ font-family:'Special Elite', system-ui;
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
     margin-bottom: 1.5rem !important;
+  }
+
+  /* Testimonials Responsive Optimization */
+  .testimonials-top h2 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+  .deck-wrapper {
+    height: 320px !important;
+    width: calc(100% - 30px) !important;
+  }
+  .testimonial-card {
+    min-height: 280px !important;
+    padding: 1.5rem !important;
+    border-radius: 20px !important;
+  }
+  .testimonial-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin: 1.5rem 0 !important;
+  }
+  .stars {
+    font-size: 0.9rem !important;
+  }
+  .user-circle {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 0.9rem !important;
+  }
+  .testimonial-user h4 {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  .testimonial-user span {
+    font-size: 0.9rem !important;
   }
 }
