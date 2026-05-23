@@ -8,7 +8,7 @@ function OwnerDashboard() {
   return (
     <DashboardLayout userType="owner">
       <div className="dash-header">
-        <h1 className="dash-title font-oi font-normal tracking-[2px] leading-[1.1] text-white">Command Center.</h1>
+        <h1 className="dash-title font-oi font-normal tracking-[2px] leading-[1.1] text-green-800">Command Center.</h1>
         <p className="dash-subtitle">Real-time luxury club statistics & management.</p>
       </div>
 
