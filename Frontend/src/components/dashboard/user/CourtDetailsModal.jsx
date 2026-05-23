@@ -35,10 +35,6 @@ function CourtDetailsModal({ booking, onClose }) {
           <h4 style={{ fontFamily: "'Special Elite', cursive", fontSize: "0.9rem", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "0.5rem" }}>Amenities</h4>
           <p style={{ fontFamily: "'Montserrat', sans-serif" }}>Complimentary towels, smart scoring screens, filtered water station, and shaded viewing gallery.</p>
         </div>
-
-        <button className="w-full border-none bg-green-800 text-white hover:bg-green-900 py-4 px-6 rounded-full text-lg font-special-elite tracking-wider font-semibold cursor-pointer transition-colors" onClick={onClose}>
-          Close Details
-        </button>
       </div>
     </div>
   );

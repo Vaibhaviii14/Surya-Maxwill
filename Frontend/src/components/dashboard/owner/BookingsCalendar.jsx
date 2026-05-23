@@ -44,7 +44,7 @@ function BookingsCalendar() {
           <button style={{ background: "transparent", border: "none", color: "#f4efe7", cursor: "pointer", display: "flex", alignItems: "center" }}>
             <ChevronLeft size={18} />
           </button>
-          <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "0.95rem", letterSpacing: "1px" }}>
+          <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "0.95rem", letterSpacing: "1px", color: "#ffffff" }}>
             {currentDay}
           </span>
           <button style={{ background: "transparent", border: "none", color: "#f4efe7", cursor: "pointer", display: "flex", alignItems: "center" }}>
