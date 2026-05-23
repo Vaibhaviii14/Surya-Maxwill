@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import paddlesImg from '../../assets/paddles.png';
 import ballImg from '../../assets/ball.png';
 import './Shop.css';
+import NegoBtn from './NegoBtn';
 
 const products = [
   {
@@ -148,7 +149,10 @@ function Shop() {
                   <p className="product-desc">{product.description}</p>
                   <div className="product-bottom">
                     <p className="product-price">{product.price}</p>
-                    <button className="buy-btn">Buy</button>
+                    <div className="product-actions" style={{ alignItems: 'center' }}>
+                      <NegoBtn />
+                      <button className="buy-btn">Buy</button>
+                    </div>
                   </div>
                 </div>
               </div>

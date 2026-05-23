@@ -352,21 +352,49 @@
   font-weight: 800;
 }
 
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.negotiate-btn,
 .buy-btn {
   background: #222;
   color: #fff;
   border: none;
-  padding: 0.6rem 2rem;
-  border-radius: 100px;
   font-family: 'Special Elite', monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
+.buy-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.negotiate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.negotiate-btn:hover,
 .buy-btn:hover {
   background: #444;
+  color: #fff;
 }
 
 /* CUSTOM ORDER CARD */
