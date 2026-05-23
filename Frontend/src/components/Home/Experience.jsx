@@ -1,4 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+import img1 from "../../assets/gallery/pickleball6.jpg";
+import img2 from "../../assets/gallery/pickleball5.jpg";
+import img3 from "../../assets/gallery/pickleball3.jpg";
+import img4 from "../../assets/gallery/pickleball7.jpeg";
 
 function Experience() {
   const navigate = useNavigate();
@@ -12,25 +16,25 @@ function Experience() {
         <div className="experience-grid">
 
           <img
-            src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1200&auto=format&fit=crop"
+            src={img1}
             alt=""
             className="grid-img large"
           />
 
           <img
-            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop"
+            src={img2}
             alt=""
             className="grid-img small"
           />
 
           <img
-            src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop"
+            src={img3}
             alt=""
             className="grid-img small"
           />
 
           <img
-            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop"
+            src={img4}
             alt=""
             className="grid-img wide"
           />

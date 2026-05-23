@@ -1,10 +1,16 @@
 /* Dashboard Theme using existing visual identity */
 .dashboard-wrapper {
-  background-color: #2f5d50; /* from the dark hero state */
+  background-color: #eef4f6; /* Premium Skyish Cream */
   min-height: 100vh;
   padding-bottom: 4rem;
-  color: #f4efe7;
+  color: #1f4d42; /* default text color is dark green */
   font-family: 'Special Elite', cursive;
+}
+
+/* Page Section Overrides for offwhite background */
+.dashboard-wrapper .bg-white,
+.dashboard-wrapper .bg-green-800 {
+  background-color: #eef4f6 !important;
 }
 
 /* Dashboard Nav matching the home nav but adapting for dashboard */
@@ -119,14 +125,14 @@
   line-height: 1.2;
   letter-spacing: 2px;
   font-weight: 100;
-  color: #f4efe7;
+  color: #1f4d42;
   margin-bottom: 0.5rem;
 }
 
 .dash-subtitle {
   font-family: 'Special Elite', system-ui;
   font-size: 1.2rem;
-  color: rgba(244, 239, 231, 0.8);
+  color: rgba(31, 77, 66, 0.8);
   letter-spacing: 1px;
 }
 
@@ -204,7 +210,7 @@
   grid-template-columns: 1fr 2fr 1fr 1fr auto;
   align-items: center;
   padding: 1.2rem 2rem;
-  background: rgba(31, 77, 66, 0.5);
+  background: #1f4d42; /* solid green background matching cards */
   border-radius: 16px;
   border: 1px solid rgba(244, 239, 231, 0.1);
   transition: 0.2s ease;
@@ -213,7 +219,7 @@
 }
 
 .history-item:hover {
-  background: rgba(31, 77, 66, 0.8);
+  background: #16372f; /* dark hover state */
   border-color: rgba(215, 255, 83, 0.3);
 }
 
@@ -323,7 +329,7 @@
   font-size: 1.2rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #d7ff53;
+  color: white;
   margin-bottom: 2rem;
   margin-top: 4rem;
   display: flex;
@@ -336,12 +342,12 @@
   display: block;
   width: 40px;
   height: 2px;
-  background: #d7ff53;
+  background: white;
 }
 
 /* White background override for section title contrast */
 .bg-white .section-title {
-  color: #1f4d42;
+  color: white;
 }
 
 .bg-white .section-title::before {

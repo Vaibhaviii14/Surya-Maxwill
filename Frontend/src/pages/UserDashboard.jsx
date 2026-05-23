@@ -72,7 +72,7 @@ function UserDashboard() {
       </div>
 
       {/* Green Section for Booking History */}
-      <div className="bg-green-800 text-white py-12 border-t-2 border-white/10">
+      <div className="bg-green-800 text-green-800 py-12 border-t-2 border-green-800/10">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-20 font-special-elite tracking-wider">
           <BookingHistory history={DUMMY_HISTORY} />
         </div>

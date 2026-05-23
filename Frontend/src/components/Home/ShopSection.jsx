@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import img1 from "../../assets/gallery/pickleball1.jpg"
+import img2 from "../../assets/gallery/pickleball3.jpg"
+import img3 from "../../assets/gallery/pickleball2.jpg"
+import img4 from "../../assets/gallery/pickleball4.jpg"
 
 function ShopSection() {
 
@@ -15,22 +19,22 @@ function ShopSection() {
           <div className="shop-grid">
 
             <img
-              src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop"
+              src={img4}
               alt=""
             />
 
             <img
-              src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1200&auto=format&fit=crop"
+              src={img2}
               alt=""
             />
 
             <img
-              src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop"
+              src={img1}
               alt=""
             />
 
             <img
-              src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop"
+              src={img3}
               alt=""
             />
 

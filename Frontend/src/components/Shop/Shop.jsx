@@ -4,6 +4,16 @@ import Footer from '../Footer/Footer';
 import paddlesImg from '../../assets/paddles.png';
 import ballImg from '../../assets/ball.png';
 import './Shop.css';
+import paddleImg1 from '../../assets/Products/Paddle/AurusX/Paddle1.png';
+import paddleImg2 from '../../assets/Products/Paddle/AurusX/Paddle2.png';
+import paddleImg3 from '../../assets/Products/Paddle/AurusX/Paddle3.png';
+import paddleImg4 from '../../assets/Products/Paddle/AurusX/Paddle4.png';
+import shirtImg1 from '../../assets/Products/Apparel/Tops/Performa/Shirt1.png';
+import shirtImg2 from '../../assets/Products/Apparel/Tops/Performa/Shirt2.png';
+import shoeImg1 from '../../assets/Products/Apparel/Shoes/Shoe1.png';
+import shoeImg2 from '../../assets/Products/Apparel/Shoes/Shoe2.png';
+import sockImg1 from '../../assets/Products/Accessories/Socks/sockimg1.png';
+import sockImg2 from '../../assets/Products/Accessories/Socks/sockimg2.png';
 import NegoBtn from './NegoBtn';
 
 const products = [
@@ -14,7 +24,7 @@ const products = [
     category: 'CARBON FIBER PADDLE',
     description: 'Precision-engineered paddle for elite control and maximum power.',
     price: '$180',
-    image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop',
+    image: paddleImg1,
     badge: 'BESTSELLER'
   },
   {
@@ -24,7 +34,7 @@ const products = [
     category: 'PERFORMANCE APPAREL',
     description: 'Ultra-breathable tech fabric designed to keep you cool on the court.',
     price: '$55',
-    image: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1200&auto=format&fit=crop',
+    image: shirtImg1,
     badge: 'NEW'
   },
   {
@@ -34,7 +44,7 @@ const products = [
     category: 'ELITE FOOTWEAR',
     description: 'Lightweight court shoes offering premium stability and grip.',
     price: '$140',
-    image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop',
+    image: shoeImg1,
     badge: ''
   },
   {
@@ -44,7 +54,7 @@ const products = [
     category: 'PREMIUM ACCESSORIES',
     description: 'Professional grade overgrip for a secure and comfortable hold.',
     price: '$12',
-    image: 'https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop',
+    image: sockImg1,
     badge: ''
   },
   {
@@ -54,7 +64,7 @@ const products = [
     category: 'INSULATED HYDRATION',
     description: 'Double-walled thermal flask keeps water ice cold for 24 hours.',
     price: '$42',
-    image: 'https://images.unsplash.com/photo-1585255452632-475268682a39?q=80&w=1200&auto=format&fit=crop',
+    image: sockImg2,
     badge: ''
   }
 ];

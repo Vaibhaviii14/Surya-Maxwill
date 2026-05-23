@@ -1,5 +1,5 @@
 .shop-page {
-  background-color: #eafcf0;
+  background-color: #f4efe7;
   min-height: 100vh;
   padding-top: 100px;
   font-family: 'Montserrat', sans-serif;
@@ -63,7 +63,7 @@
 
 .btn-solid {
   background: #02362c;
-  color: #eafcf0;
+  color: #f4efe7;
   border: 2px solid #02362c;
   padding: 0.8rem 1.8rem;
   border-radius: 100px;
@@ -95,7 +95,7 @@
 
 .btn-outline:hover {
   background: #02362c;
-  color: #eafcf0;
+  color: #f4efe7;
 }
 
 .shop-hero-right {
@@ -173,7 +173,7 @@
 }
 
 .sort-select {
-  background: #eafcf0;
+  background: #f4efe7;
   border: 1px solid #02362c;
   border-radius: 100px;
   padding: 0.6rem 1.5rem;
@@ -458,7 +458,7 @@
 }
 
 .btn-outline-light:hover {
-  background: #eafcf0;
+  background: #f4efe7;
   color: #02362c;
 }
 

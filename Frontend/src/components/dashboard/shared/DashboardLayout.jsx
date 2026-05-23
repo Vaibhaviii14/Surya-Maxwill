@@ -6,7 +6,7 @@ function DashboardLayout({ children, userType = "user" }) {
     <div className="dashboard-wrapper">
       <Navbar />
 
-      <main className="dash-content" style={{ paddingTop: "8rem" }}>
+      <main className="dash-content" style={{ paddingTop: "13rem" }}>
         {children}
       </main>
     </div>

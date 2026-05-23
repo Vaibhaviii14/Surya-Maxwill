@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 import './Arena.css';
-
+import img1 from '../../assets/gallery/pickleball1.jpg';
+import img2 from '../../assets/gallery/pickleball2.jpg';
+import img3 from '../../assets/gallery/pickleball6.jpg';
+import img4 from '../../assets/gallery/pickleball4.jpg';
 const coaches = [
   {
     id: 1,
@@ -78,19 +81,19 @@ function Arena() {
               <p>Precision engineered for elite performance. Where high-end hospitality meets the intensity of professional play.</p>
             </div>
           </div>
-          
+
           <div className="arena-gallery">
             <div className="gallery-item item-main">
-              <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1200&auto=format&fit=crop" alt="Match Play" />
+              <img src={img1} alt="Match Play" />
             </div>
             <div className="gallery-item item-ball">
-              <img src="https://images.unsplash.com/photo-1585255452632-475268682a39?q=80&w=600&auto=format&fit=crop" alt="Pickleball" />
+              <img src={img2} alt="Pickleball" />
             </div>
             <div className="gallery-item item-lounge">
-              <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=600&auto=format&fit=crop" alt="Lounge Area" />
+              <img src={img3} alt="Lounge Area" />
             </div>
             <div className="gallery-item item-team">
-              <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop" alt="Team Play" />
+              <img src={img4} alt="Team Play" />
             </div>
           </div>
         </section>
@@ -101,14 +104,14 @@ function Arena() {
             <span className="elite-subtitle">THE MASTERS OF MOTION</span>
             <h2 className="elite-title">ELITE SQUAD.</h2>
           </div>
-          
+
           <div className="slider-wrapper">
             <div className="slider-container">
               <div className="slide">
                 {sliderCoaches.map(coach => (
-                  <div 
-                    key={coach.id} 
-                    className="item" 
+                  <div
+                    key={coach.id}
+                    className="item"
                     style={{ backgroundImage: `url(${coach.image})` }}
                   >
                     <div className="content">
