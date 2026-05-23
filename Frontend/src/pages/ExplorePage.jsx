@@ -10,7 +10,7 @@ function ExplorePage() {
       <Navbar />
       <div className="explore-wrapper">
         <div className="explore-header">
-          <h1 className="explore-title font-oi font-normal text-7xl tracking-[2px] leading-[1.1] text-white">The Arena Collection.</h1>
+          <h1 className="explore-title font-oi font-normal tracking-[2px] leading-[1.1] text-white">The Arena Collection.</h1>
           <p className="explore-subtitle font-special-elite">
             Explore our curated selection of premium courts. View real-time availability,
             compare surfaces, and secure your spot in seconds.

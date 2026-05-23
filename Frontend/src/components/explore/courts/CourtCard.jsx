@@ -28,8 +28,8 @@ function CourtCard({ court }) {
           <span className="court-badge border border-current px-3 py-1 rounded-full">{court.location}</span>
         </div>
 
-        <h2 className="court-name font-londrina text-4xl mb-4">{court.name}</h2>
-        <p className="court-description font-special-elite tracking-wider text-lg opacity-90 mb-6">{court.description}</p>
+        <h2 className="court-name font-londrina mb-4">{court.name}</h2>
+        <p className="court-description font-special-elite opacity-90 mb-6">{court.description}</p>
 
         <SlotPickerPreview slots={court.slots} />
       </div>

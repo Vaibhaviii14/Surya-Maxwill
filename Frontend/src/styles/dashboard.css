@@ -415,3 +415,222 @@
   transform: rotate(180deg);
 }
 
+/* ========================================= */
+/* ADDITIONAL MOBILE RESPONSIVENESS OVERRIDES */
+/* ========================================= */
+
+.dash-grid-two-cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media(max-width: 1024px) {
+  .dash-grid-two-cols {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media(max-width: 900px) {
+  .dash-title {
+    font-size: 2.6rem;
+  }
+  .dash-subtitle {
+    font-size: 1.05rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    padding: 1.2rem 1.5rem;
+  }
+  .history-court {
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .history-date, .history-time, .history-status, .history-price {
+    font-size: 0.9rem;
+  }
+  .history-status {
+    align-self: flex-start;
+  }
+  .history-price {
+    align-self: flex-end;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #d7ff53;
+  }
+}
+
+@media(max-width: 600px) {
+  .dash-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .dash-subtitle {
+    font-size: 0.95rem;
+  }
+  .modal-content {
+    padding: 1.8rem;
+    border-radius: 24px;
+  }
+  .modal-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .modal-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .modal-info-item p {
+    font-size: 1.05rem;
+  }
+}
+
+@media(max-width: 400px) {
+  .upcoming-grid {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.5rem;
+  }
+  .dash-card {
+    padding: 1.5rem;
+  }
+  .dash-card-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ========================================= */
+/* BOOKINGS CALENDAR TIMELINE RESPONSIVENESS */
+/* ========================================= */
+
+.calendar-scroll-wrap {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215, 255, 83, 0.3) rgba(244, 239, 231, 0.05);
+  margin-top: 1rem;
+}
+
+.calendar-scroll-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.calendar-scroll-wrap::-webkit-scrollbar-thumb {
+  background: rgba(215, 255, 83, 0.3);
+  border-radius: 3px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+  min-width: 800px;
+}
+
+.calendar-time-hdr {
+  width: 15%;
+  padding: 1rem;
+  text-align: left;
+  font-family: 'Special Elite', cursive;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #f4efe7;
+}
+
+.calendar-court-hdr {
+  width: 21.25%;
+  padding: 1rem;
+  background: rgba(244, 239, 231, 0.05);
+  border-radius: 12px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f4efe7;
+  text-align: center;
+}
+
+.calendar-time-cell {
+  padding: 1rem;
+  font-family: 'Special Elite', cursive;
+  font-size: 0.85rem;
+  color: #d7ff53;
+}
+
+.calendar-booking-cell {
+  padding: 1rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  vertical-align: top;
+  min-height: 80px;
+}
+
+.calendar-booking-cell.available {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1.5px dashed rgba(244, 239, 231, 0.05);
+}
+
+.calendar-booking-cell.booked {
+  background: #16372f;
+  border: 1.5px solid rgba(215, 255, 83, 0.3);
+}
+
+.calendar-patron-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f4efe7;
+  display: block;
+}
+
+.calendar-booking-type {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.75rem;
+  color: #d7ff53;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.calendar-avail-label {
+  font-size: 0.8rem;
+  opacity: 0.2;
+  font-family: 'Montserrat', sans-serif;
+  color: #f4efe7;
+  display: block;
+}
+
+@media(max-width: 768px) {
+  .calendar-table {
+    min-width: 600px;
+    border-spacing: 0.3rem;
+  }
+  .calendar-court-hdr {
+    font-size: 1.15rem;
+    padding: 0.6rem;
+  }
+  .calendar-time-hdr, .calendar-time-cell {
+    padding: 0.6rem;
+    font-size: 0.75rem;
+  }
+  .calendar-booking-cell {
+    padding: 0.6rem;
+    border-radius: 10px;
+  }
+  .calendar-patron-name {
+    font-size: 0.85rem;
+  }
+  .calendar-booking-type {
+    font-size: 0.65rem;
+  }
+  .calendar-avail-label {
+    font-size: 0.75rem;
+  }
+}
+

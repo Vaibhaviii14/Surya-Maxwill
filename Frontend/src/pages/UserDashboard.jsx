@@ -60,7 +60,7 @@ function UserDashboard() {
       <div className="bg-white text-green-800 py-12">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-20 font-special-elite tracking-wider">
           <div className="mb-12">
-            <h1 className="font-medium text-5xl mb-2 text-green-800">Welcome, Marcus.</h1>
+            <h1 className="font-medium text-3xl md:text-5xl mb-2 text-green-800">Welcome, Marcus.</h1>
             <p className="font-special-elite tracking-wider text-green-800/80">Your patron portal for exclusive court access.</p>
           </div>
 

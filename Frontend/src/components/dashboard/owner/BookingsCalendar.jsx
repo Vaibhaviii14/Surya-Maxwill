@@ -53,13 +53,13 @@ function BookingsCalendar() {
         </div>
       </div>
 
-      <div style={{ overflowX: "auto" }}>
-        <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0.5rem", minWidth: "750px" }}>
+      <div className="calendar-scroll-wrap">
+        <table className="calendar-table">
           <thead>
             <tr>
-              <th style={{ width: "15%", padding: "1rem", textAlign: "left", fontFamily: "'Special Elite', cursive", opacity: "0.5", fontSize: "0.8rem", textTransform: "uppercase" }}>Time Slot</th>
+              <th className="calendar-time-hdr">Time Slot</th>
               {COURTS.map(court => (
-                <th key={court} style={{ width: "21.25%", padding: "1rem", background: "rgba(244, 239, 231, 0.05)", borderRadius: "12px", fontFamily: "'Londrina Solid', cursive", fontSize: "1.5rem", fontWeight: "400", letterSpacing: "1px" }}>
+                <th key={court} className="calendar-court-hdr">
                   {court}
                 </th>
               ))}
@@ -68,30 +68,22 @@ function BookingsCalendar() {
           <tbody>
             {TIME_SLOTS.map(slot => (
               <tr key={slot}>
-                <td style={{ padding: "1rem", fontFamily: "'Special Elite', cursive", fontSize: "0.85rem", color: "#d7ff53" }}>
+                <td className="calendar-time-cell">
                   {slot}
                 </td>
                 {COURTS.map(court => {
                   const booking = getBooking(court, slot);
                   return (
-                    <td key={court} style={{ 
-                      padding: "1rem", 
-                      borderRadius: "16px",
-                      background: booking ? "#16372f" : "rgba(255, 255, 255, 0.02)",
-                      border: booking ? "1.5px solid rgba(215, 255, 83, 0.3)" : "1.5px dashed rgba(244, 239, 231, 0.05)",
-                      transition: "all 0.3s ease",
-                      verticalAlign: "top",
-                      minHeight: "80px"
-                    }}>
+                    <td key={court} className={`calendar-booking-cell ${booking ? "booked" : "available"}`}>
                       {booking ? (
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-                          <span style={{ fontSize: "0.95rem", fontWeight: "700" }}>{booking.patron}</span>
-                          <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "0.75rem", color: "#d7ff53", letterSpacing: "1px" }}>
+                          <span className="calendar-patron-name">{booking.patron}</span>
+                          <span className="calendar-booking-type">
                             {booking.type}
                           </span>
                         </div>
                       ) : (
-                        <span style={{ fontSize: "0.8rem", opacity: "0.2", fontFamily: "'Montserrat', sans-serif" }}>Available</span>
+                        <span className="calendar-avail-label">Available</span>
                       )}
                     </td>
                   );

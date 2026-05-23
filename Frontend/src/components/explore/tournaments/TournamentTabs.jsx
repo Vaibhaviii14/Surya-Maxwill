@@ -53,7 +53,9 @@ function TournamentTabs() {
     <section className="tournaments-section">
       <div className="tournaments-header">
         <h2 className="tournaments-title font-thin">The Tournament Hub.</h2>
-        <div className="tournament-tabs">
+        
+        {/* DESKTOP TABS */}
+        <div className="tournament-tabs-desktop">
           <button 
             className={`tournament-tab ${activeTab === "live" ? "active" : ""}`}
             onClick={() => setActiveTab("live")}
@@ -72,6 +74,19 @@ function TournamentTabs() {
           >
             Hall of Fame
           </button>
+        </div>
+
+        {/* MOBILE DROPDOWN */}
+        <div className="tournament-dropdown-mobile">
+          <select 
+            value={activeTab} 
+            onChange={(e) => setActiveTab(e.target.value)}
+            className="tournament-select"
+          >
+            <option value="live">Live & Ongoing</option>
+            <option value="upcoming">Upcoming Events</option>
+            <option value="past">Hall of Fame</option>
+          </select>
         </div>
       </div>
 
