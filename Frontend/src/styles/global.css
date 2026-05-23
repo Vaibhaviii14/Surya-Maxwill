@@ -561,7 +561,9 @@ body {
   }
 
   .next-section-content h2 {
-    font-size: 3.5rem;
+    font-size: 5rem !important; 
+    letter-spacing:2px !important;
+    line-height:1.5 !important;
   }
 
   .hero-content p {
@@ -1382,7 +1384,7 @@ body {
 @media(max-width:768px) {
 
   .courts-section {
-    padding: 8rem 2rem;
+    padding: 8rem 1.5rem;
   }
 
   .courts-left h2 {
@@ -1805,14 +1807,19 @@ body {
 
   .booking-layout {
     grid-template-columns: 1fr;
+    gap:2rem;
   }
 
   .booking-left h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .booking-right {
     padding-top: 0;
+  }
+
+  .booking-right p{
+    font-size: 1.1rem;
   }
 
   .booking-bottom {
@@ -2247,11 +2254,11 @@ body {
 @media(max-width:900px) {
 
   .membership-container h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .membership-container p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     line-height: 2;
   }

@@ -36,6 +36,7 @@
   color: #1f4d42; /* green text */
   margin-bottom: 1.5rem;
   max-width: 800px;
+  padding-top: 3rem;
 }
 
 .explore-subtitle {
@@ -119,6 +120,9 @@
     grid-template-columns: 1fr;
     gap: 2.5rem;
     direction: ltr;
+  }
+  .court-showcase {
+    padding: 3rem 2rem;
   }
 }
 
@@ -663,10 +667,10 @@
 .tourney-meta {
   display: flex;
   gap: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-family: 'Special Elite', system-ui;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.7); /* white text on green */
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
@@ -678,9 +682,9 @@
 }
 
 .tourney-desc {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Special Elite', system-ui;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8); /* white text on green */
   max-width: 600px;
@@ -747,19 +751,25 @@
 }
 
 .tourney-btn.secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.16);
   border-color: #ffffff;
   box-shadow: none;
 }
 
 /* PAST TOURNAMENT SPECIFICS */
 .tournament-card.past {
-  background: rgba(31, 77, 66, 0.5); /* green translucent card */
+  background: rgba(88, 88, 88, 0.9); /* darker grey with 90% opacity */
   border: 1.5px dashed rgba(255, 255, 255, 0.3);
+}
+.tournament-card.past .tourney-name,
+.tournament-card.past .tourney-meta,
+.tournament-card.past .tourney-desc,
+.tournament-card.past .tourney-btn {
+  color: #ffffff; /* ensure all inner text is white */
 }
 
 .tournament-card.past .tourney-name {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff; /* white text */
 }
 
 .winner-highlight {
@@ -779,18 +789,20 @@
 }
 
 .winner-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Special Elite', system-ui;
   font-weight: 500;
   color: #ffffff; /* white name */
   font-size: 1.1rem;
+  
 }
 
 .winner-label {
   font-family: 'Special Elite', cursive;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #53776d;
+  color: #ffffffff;
   letter-spacing: 3px;
+  padding-bottom:0.3rem;
 }
 
 @media(max-width: 900px) {
@@ -879,7 +891,7 @@
   }
   .court-badge {
     font-size: 0.8rem;
-    padding: 0.4rem 0.9rem;
+    padding: 0.2rem 0.9rem;
     letter-spacing: 1px;
   }
   .tournament-tabs {
